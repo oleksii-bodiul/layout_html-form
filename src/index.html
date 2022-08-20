@@ -46,11 +46,31 @@
           type="date"
           name="Date-of-birth">
         </label>
-        <label class="form-field">
+        <label>
           I agree with terms and conditions
           <input
           type="checkbox"
           name="Terms-and-conditions"
+          required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Registration data
+        </legend>
+        <label class="form-field">
+          Email:
+          <input
+          type="email"
+          name="email"
+          placeholder="email@example.com"
+          required>
+        </label>
+        <label>
+          Password:
+          <input
+          type="password"
+          name="password"
           required>
         </label>
       </fieldset>
