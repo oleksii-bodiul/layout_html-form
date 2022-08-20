@@ -16,64 +16,179 @@
     <form
     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="POST">
-      <fieldset>
+      <fieldset class="fieldset-style">
+
         <legend>
           Personal information
         </legend>
+
         <label class="form-field">
           Surname:
+
           <input type="text"
           name="Surname"
-          required>
+          required
+          autocomplete="off">
         </label>
+
         <label class="form-field">
           Name:
+
           <input type="text"
           name="Name"
-          required>
+          required
+          autocomplete="off">
         </label>
+
         <label class="form-field">
           How old are you?
+
           <input
           type="number"
           value="12"
           name="Age"
+          min="1"
+          max="100"
           >
         </label>
+
         <label class="form-field">
           Date of birth:
+
           <input
           type="date"
           name="Date-of-birth">
         </label>
+
         <label>
           I agree with terms and conditions
+
           <input
           type="checkbox"
           name="Terms-and-conditions"
           required>
         </label>
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset-style">
+
         <legend>
           Registration data
         </legend>
+
         <label class="form-field">
           Email:
+
           <input
           type="email"
           name="email"
           placeholder="email@example.com"
           required>
         </label>
+
         <label>
           Password:
+
           <input
           type="password"
           name="password"
-          required>
+          required
+          minlength="8"
+          maxlength="30">
+        </label>
+
+      </fieldset>
+
+      <fieldset class="fieldset-style">
+
+        <legend>
+          Interesting facts about you
+        </legend>
+
+        <div class="form-field">
+          Do you like dogs?
+
+          <label>
+            <input
+            type="radio"
+            name="dogs"
+            >
+            Yes
+          </label>
+
+          <label>
+            <input
+            type="radio"
+            name="dogs">
+            No
+          </label>
+        </div>
+
+        <label class="form-field">
+          What is your favorite color?
+
+          <input
+          type="color"
+          name="color">
+        </label>
+
+        <label class="form-field">
+          What time do you woke up?
+
+          <input
+          type="time"
+          name="wokeUpTime">
+        </label>
+
+        <label class="form-field">
+          What is your favorite football team?
+
+          <select
+          name="favoriteClub"
+          multiple>
+            <option value="real">Real</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="liverpool">Liverpool</option>
+            <option value="arsenal">Arsenal</option>
+            <option value="dynamo-kyiv">Dynamo Kyiv</option>
+            <option value="shakhtar">Shakhtar</option>
+          </select>
+        </label>
+
+        <label>
+          How do you rate our work?
+
+          <input
+          type="range"
+          name="workRating">
         </label>
       </fieldset>
+
+      <fieldset class="fieldset-style">
+
+        <legend>Additional info</legend>
+
+        <label class="form-field">
+          Comments:
+
+          <textarea
+          name="comments"
+          cols="20"
+          rows="3"></textarea>
+        </label>
+
+        <label>
+          Would you recommend us?
+
+          <select name="recommendation">
+
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
