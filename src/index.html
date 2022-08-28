@@ -14,9 +14,9 @@
     <script type="text/javascript" src="./main.js"></script>
     <form
     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="POST">
+    method="POST"
+    >
       <fieldset class="fieldset-style">
-
         <legend>
           Personal information
         </legend>
@@ -27,7 +27,8 @@
           <input type="text"
           name="Surname"
           required
-          autocomplete="off">
+          autocomplete="off"
+          >
         </label>
 
         <label class="form-field">
@@ -36,7 +37,8 @@
           <input type="text"
           name="Name"
           required
-          autocomplete="off">
+          autocomplete="off"
+          >
         </label>
 
         <label class="form-field">
@@ -56,7 +58,8 @@
 
           <input
           type="date"
-          name="Date-of-birth">
+          name="Date-of-birth"
+          >
         </label>
 
         <label>
@@ -65,12 +68,12 @@
           <input
           type="checkbox"
           name="Terms-and-conditions"
-          required>
+          required
+          >
         </label>
       </fieldset>
 
       <fieldset class="fieldset-style">
-
         <legend>
           Registration
         </legend>
@@ -82,7 +85,8 @@
           type="email"
           name="email"
           placeholder="email@example.com"
-          required>
+          required
+          >
         </label>
 
         <label>
@@ -93,13 +97,13 @@
           name="password"
           required
           minlength="8"
-          maxlength="30">
+          maxlength="30"
+          >
         </label>
 
       </fieldset>
 
       <fieldset class="fieldset-style">
-
         <legend>
           An interesting facts about you!
         </legend>
@@ -118,7 +122,8 @@
           <label>
             <input
             type="radio"
-            name="dogs">
+            name="dogs"
+            >
             No
           </label>
         </div>
@@ -128,7 +133,8 @@
 
           <input
           type="color"
-          name="color">
+          name="color"
+          >
         </label>
 
         <label class="form-field">
@@ -137,7 +143,8 @@
           <input
           type="time"
           name="bedTime"
-          step="1">
+          step="1"
+          >
         </label>
 
         <label class="form-field">
@@ -145,9 +152,12 @@
 
           <select
           name="favoriteClub"
-          multiple>
+          multiple
+          >
             <option value="bmw">BMW</option>
+
             <option value="audi">Audi</option>
+
             <option value="lada">Lada</option>
           </select>
         </label>
@@ -160,28 +170,29 @@
           name="workRating"
           min="0"
           max="10"
-          value="0">
+          value="0"
+          >
         </label>
       </fieldset>
 
       <fieldset class="fieldset-style">
-
         <legend>Additional info</legend>
 
         <label class="form-field">
           Comments:
-
+          
           <textarea
           name="comments"
           cols="20"
-          rows="2"></textarea>
+          rows="2"
+          >
+          </textarea>
         </label>
 
         <label>
           Would you recommend us?
 
           <select name="recommendation">
-
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
